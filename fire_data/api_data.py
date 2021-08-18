@@ -10,6 +10,8 @@ import pandas as pd
 def download_data(api_url: str) -> httpx.Response:
     """Download the data from the API.
 
+    This data gets cached so subsequent calls will be faster.
+
     Args:
         api_url: The url to use for the download
 
